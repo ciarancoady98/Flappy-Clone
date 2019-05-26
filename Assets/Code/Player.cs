@@ -10,6 +10,8 @@ public class Player : MonoBehaviour
         
     }
 
+    [SerializeField] private float _upwardForceMultiplier = (float) 100;
+
     // Update is called once per frame
     void Update()
     {
@@ -18,7 +20,7 @@ public class Player : MonoBehaviour
         {
             Rigidbody2D rigidbody = GetComponent<Rigidbody2D>();
             rigidbody.velocity = Vector3.zero;
-            rigidbody.AddForce(Vector3.up * 1000);
+            rigidbody.AddForce(Vector3.up * _upwardForceMultiplier);
         }
     }
 }
