@@ -20,10 +20,12 @@ public class Player : MonoBehaviour
             rigidbody.AddForce(Vector3.up * _upwardForceMultiplier);
         }
 
+        /*
         if(transform.position.y > 6.0 || transform.position.y < 6.0)
         {
             //if the player goes too high or too low restart the game
             SceneManager.LoadScene(0);
         }
+        */
     }
 }
