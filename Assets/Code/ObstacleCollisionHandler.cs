@@ -7,6 +7,7 @@ public class ObstacleCollisionHandler : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        //if a collision occurs reset the game back to the start
         Debug.Log("Collision Has Occured");
         SceneManager.LoadScene(0);
     }
