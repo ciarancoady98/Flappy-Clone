@@ -8,8 +8,6 @@ public class CrabRandomMovement : MonoBehaviour
     [SerializeField] private float movementAmount = (float)0.1;
     private int _direction = 1;
 
-    //we also want to implement random spacing of the crabs
-
     //move the crab by the movement amount in the current direction
     private void move()
     {
