@@ -12,7 +12,8 @@ public class MoveObstacleLeft : MonoBehaviour
         transform.Translate(Vector3.left * Time.deltaTime * _speed);
         if(transform.position.x < -15)
         {
-            transform.position = new Vector3(15, 0, 0);
+            float yPos = UnityEngine.Random.Range(-3, 3);
+            transform.position = new Vector3(15, yPos, 0);
         }
     }
 }
