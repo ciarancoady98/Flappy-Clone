@@ -7,6 +7,7 @@ public class MoveObstacleLeft : MonoBehaviour
     [SerializeField] private float _speed = (float)5;
     [SerializeField] private bool _randomizeHeight = true;
     [SerializeField] private bool _randomMovement = false;
+    [SerializeField] private int _renderPlane = 0;
 
     // Update is called once per frame
     void Update()
@@ -17,7 +18,7 @@ public class MoveObstacleLeft : MonoBehaviour
             if (_randomizeHeight)
             {
                 float yPos = UnityEngine.Random.Range(-3, 3);
-                transform.position = new Vector3(15, yPos, 0);
+                transform.position = new Vector3(15, yPos, _renderPlane);
             }
             else if (_randomMovement)
             {
@@ -26,7 +27,7 @@ public class MoveObstacleLeft : MonoBehaviour
             }
             else
             {
-                transform.position = new Vector3(15, transform.position.y, 0);
+                transform.position = new Vector3(15, transform.position.y, _renderPlane);
             }
         }
     }
