@@ -140,9 +140,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speed: 5
   _randomizeHeight: 1
-  _randomMovement: 0
   _renderPlane: 0
-  _randomMovementSpeed: 0.1
 --- !u!1 &305522689 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 475466324594080576, guid: 453ed93a4f8eef248b3234a929ec2863,
@@ -163,9 +161,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speed: 5
   _randomizeHeight: 1
-  _randomMovement: 0
   _renderPlane: 0
-  _randomMovementSpeed: 0.1
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -398,6 +394,8 @@ GameObject:
   - component: {fileID: 787602024}
   - component: {fileID: 787602023}
   - component: {fileID: 787602025}
+  - component: {fileID: 787602027}
+  - component: {fileID: 787602026}
   m_Layer: 0
   m_Name: Crab
   m_TagString: Untagged
@@ -463,7 +461,7 @@ Transform:
   m_GameObject: {fileID: 787602022}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 14.04, y: -4.3, z: -1}
-  m_LocalScale: {x: 2.5, y: 2.5, z: 1}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
@@ -482,9 +480,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speed: 5
   _randomizeHeight: 0
-  _randomMovement: 1
   _renderPlane: -1
-  _randomMovementSpeed: 0.1
+--- !u!114 &787602026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 787602022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6592099bab1f7c34cbeff9ae5fb3ed6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &787602027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 787602022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e215ed90e6a7d8e4db3aca327c5d35cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _randomMovement: 1
+  movementAmount: 0.01
 --- !u!1 &1076248868
 GameObject:
   m_ObjectHideFlags: 0
@@ -661,9 +683,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speed: 5
   _randomizeHeight: 1
-  _randomMovement: 0
   _renderPlane: 0
-  _randomMovementSpeed: 0.1
 --- !u!1001 &1337012268
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -753,9 +773,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speed: 5
   _randomizeHeight: 1
-  _randomMovement: 0
   _renderPlane: 0
-  _randomMovementSpeed: 0.1
 --- !u!1001 &1505937162
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -845,9 +863,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speed: 5
   _randomizeHeight: 1
-  _randomMovement: 0
   _renderPlane: 0
-  _randomMovementSpeed: 0.1
 --- !u!1 &1598706528
 GameObject:
   m_ObjectHideFlags: 0
@@ -1069,9 +1085,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speed: 5
   _randomizeHeight: 1
-  _randomMovement: 0
   _renderPlane: 0
-  _randomMovementSpeed: 0.1
 --- !u!1001 &475466323855745757
 PrefabInstance:
   m_ObjectHideFlags: 0
