@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoveObstacleLeft : MonoBehaviour
+public class ObstacleMovement : MonoBehaviour
 {
     [SerializeField] private float _speed = (float)5;
     [SerializeField] private bool _randomizeHeight = true;

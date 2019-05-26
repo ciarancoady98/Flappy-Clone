@@ -141,6 +141,7 @@ MonoBehaviour:
   _speed: 5
   _randomizeHeight: 1
   _randomMovement: 0
+  _renderPlane: 0
 --- !u!1 &305522689 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 475466324594080576, guid: 453ed93a4f8eef248b3234a929ec2863,
@@ -162,6 +163,7 @@ MonoBehaviour:
   _speed: 5
   _randomizeHeight: 1
   _randomMovement: 0
+  _renderPlane: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -479,6 +481,7 @@ MonoBehaviour:
   _speed: 5
   _randomizeHeight: 0
   _randomMovement: 0
+  _renderPlane: -1
 --- !u!1 &1076248868
 GameObject:
   m_ObjectHideFlags: 0
@@ -656,6 +659,7 @@ MonoBehaviour:
   _speed: 5
   _randomizeHeight: 1
   _randomMovement: 0
+  _renderPlane: 0
 --- !u!1001 &1337012268
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -746,6 +750,7 @@ MonoBehaviour:
   _speed: 5
   _randomizeHeight: 1
   _randomMovement: 0
+  _renderPlane: 0
 --- !u!1001 &1505937162
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -836,6 +841,7 @@ MonoBehaviour:
   _speed: 5
   _randomizeHeight: 1
   _randomMovement: 0
+  _renderPlane: 0
 --- !u!1 &1598706528
 GameObject:
   m_ObjectHideFlags: 0
@@ -967,7 +973,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f3a3652a02bb04468e5fee42a691478, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _scrollSpeed: 5
+  _scrollSpeed: 3.5
 --- !u!1001 &2042818678
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1058,6 +1064,7 @@ MonoBehaviour:
   _speed: 5
   _randomizeHeight: 1
   _randomMovement: 0
+  _renderPlane: 0
 --- !u!1001 &475466323855745757
 PrefabInstance:
   m_ObjectHideFlags: 0
