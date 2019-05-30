@@ -8,14 +8,25 @@ public class ObstacleMovement : MonoBehaviour
     [SerializeField] private bool _randomizeHeight = true;
     [SerializeField] private bool _randomRedrawPos = false;
     [SerializeField] private int _renderPlane = 0;
-
-    //we also want to implement random spacing of the crabs
+    private int pastPlayer = 0;
 
     // Update is called once per frame
     void Update()
     {
         transform.Translate(Vector3.left * Time.deltaTime * _speed);
-        if(transform.position.x < -15)
+
+        if (transform.position.x < 0)
+        {
+            pastPlayer++;
+        }
+
+        if (pastPlayer == 1)
+        {
+            ScoreKeeper scoreKeeper = GameObject.FindObjectOfType<ScoreKeeper>();
+            scoreKeeper.IncrementScore();
+        }
+
+        if (transform.position.x < -15)
         {
             float xPos;
             if (_randomRedrawPos)
@@ -37,6 +48,8 @@ public class ObstacleMovement : MonoBehaviour
             {
                 transform.position = new Vector3(xPos, transform.position.y, _renderPlane);
             }
+
+            pastPlayer = 0;
         }
     }
 }
