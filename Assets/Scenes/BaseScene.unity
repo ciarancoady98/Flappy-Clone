@@ -141,6 +141,7 @@ MonoBehaviour:
   _speed: 5
   _randomizeHeight: 1
   _randomRedrawPos: 0
+  _partOfScore: 1
   _renderPlane: 0
 --- !u!1 &208687938
 GameObject:
@@ -255,6 +256,7 @@ MonoBehaviour:
   _speed: 5
   _randomizeHeight: 1
   _randomRedrawPos: 0
+  _partOfScore: 1
   _renderPlane: 0
 --- !u!1 &519420028
 GameObject:
@@ -652,9 +654,9 @@ GameObject:
   m_Component:
   - component: {fileID: 787602024}
   - component: {fileID: 787602023}
-  - component: {fileID: 787602025}
   - component: {fileID: 787602027}
   - component: {fileID: 787602026}
+  - component: {fileID: 787602025}
   m_Layer: 0
   m_Name: Crab
   m_TagString: Untagged
@@ -740,6 +742,7 @@ MonoBehaviour:
   _speed: 5
   _randomizeHeight: 0
   _randomRedrawPos: 1
+  _partOfScore: 0
   _renderPlane: -1
 --- !u!114 &787602026
 MonoBehaviour:
@@ -944,6 +947,7 @@ MonoBehaviour:
   _speed: 5
   _randomizeHeight: 1
   _randomRedrawPos: 0
+  _partOfScore: 1
   _renderPlane: 0
 --- !u!1001 &1337012268
 PrefabInstance:
@@ -1035,6 +1039,7 @@ MonoBehaviour:
   _speed: 5
   _randomizeHeight: 1
   _randomRedrawPos: 0
+  _partOfScore: 1
   _renderPlane: 0
 --- !u!1001 &1505937162
 PrefabInstance:
@@ -1126,6 +1131,7 @@ MonoBehaviour:
   _speed: 5
   _randomizeHeight: 1
   _randomRedrawPos: 0
+  _partOfScore: 1
   _renderPlane: 0
 --- !u!1 &1563708720
 GameObject:
@@ -1161,6 +1167,7 @@ MonoBehaviour:
   _speed: 5
   _randomizeHeight: 0
   _randomRedrawPos: 0
+  _partOfScore: 0
   _renderPlane: -1
 --- !u!114 &1563708722
 MonoBehaviour:
@@ -1459,6 +1466,7 @@ MonoBehaviour:
   _speed: 5
   _randomizeHeight: 1
   _randomRedrawPos: 0
+  _partOfScore: 1
   _renderPlane: 0
 --- !u!1001 &475466323855745757
 PrefabInstance:

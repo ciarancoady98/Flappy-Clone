@@ -7,7 +7,9 @@ public class ObstacleMovement : MonoBehaviour
     [SerializeField] private float _speed = (float)5;
     [SerializeField] private bool _randomizeHeight = true;
     [SerializeField] private bool _randomRedrawPos = false;
+    [SerializeField] private bool _partOfScore = true;
     [SerializeField] private int _renderPlane = 0;
+
     private int pastPlayer = 0;
 
     // Update is called once per frame
@@ -20,7 +22,7 @@ public class ObstacleMovement : MonoBehaviour
             pastPlayer++;
         }
 
-        if (pastPlayer == 1)
+        if (pastPlayer == 1 && _partOfScore)
         {
             ScoreKeeper scoreKeeper = GameObject.FindObjectOfType<ScoreKeeper>();
             scoreKeeper.IncrementScore();
